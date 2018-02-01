@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/SioJL13/Integrador#readme",
   "engines": {
-      "node":"4.0.0"
+    "node": "4.0.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
   }
 }
