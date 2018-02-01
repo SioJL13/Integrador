@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-integrador",
+  "version": "1.0.0",
+  "description": "Proyecto Integrador ITESM 2018",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SioJL13/Integrador.git"
+  },
+  "author": "Siomara Jimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SioJL13/Integrador/issues"
+  },
+  "homepage": "https://github.com/SioJL13/Integrador#readme",
+  "engines": {
+      "node":"4.0.0"
+  }
+}
