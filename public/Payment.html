@@ -7777,6 +7777,9 @@
         color: #323f4d;
         font-size: 16px;
     }
+		floating-label-input:focus + label {
+			display: none;
+		}
     </style><script type="text/javascript" charset="utf8" async="" src="https://smartlock.google.com/client"></script></head><!-- TODO  Añadir clase con baselineVariantClasess, vendrá en el payload de los tests con BODY_CLASS=true -->
 <body class="homepage gtTaCloudTst gtTaCloudTst1 epHpLiveLabFour epHpLiveLabFour-1 thGuestSelectorTst thGuestSelectorTst1 txLiveLabLoupe txLiveLabLoupe1 thSPHPVrboTst thSPHPVrboTst1 ptaHpSuperFastSearchBox ptaHpSuperFastSearchBox1 epHpLiveLabTwo epHpLiveLabTwo-1 epHpLiveLabOne epHpLiveLabOne-1 epHpLiveLabThree epHpLiveLabThree-1 authOneTapHp authOneTapHp1 OpinionLabFeedbackWidget OpinionLabFeedbackWidget1 epHpLiveLabSix epHpLiveLabSix1 epHpRecentlyViewed epHpRecentlyViewed0 ptaHpDynamicRouting ptaHpDynamicRouting1 gtTaRecentTst gtTaRecentTst2 txAppBanner txAppBanner1" data-gr-c-s-loaded="true">
 <style media="screen" rel="text/css">
@@ -8167,45 +8170,29 @@
                                                 <div class="js-paymentField ">
                                                     <div class="card-fields">
                                                         <div class="card-container"><div class="js-creditCardContainer"><div class="row js-CARDCCContainer">
-                                                            <div class="col-xs-12">
+                                                            <div class="col-xs-12 col-md-12">
                                                                 <div class="cc-number">
                                                                     <div class="form-group has-icon-stack has-cc-icon">
-                                                                        <floating-label-hapi class="floating-label">
-                                                                            <label for="panIframe" class="cc-available-label control-label">
-                                                                                Card Number
-                                                                            </label>
-                                                                            <tracked-element>
-                                                                                <div class="mock-input form-control js-pan" data-tracking-label="cc-pan">
-                                                                                    <iframe class="panIframe hapi-sensitiveForm" scrolling="no" seamless="seamless" frameborder="0" src="https://payments.homeaway.com/sensitiveForms/f103ea86-57b8-4c4c-80e7-a6ce91b8323a/pan?fieldType=PAN&amp;useNumberTypePanAndCvn=true&amp;useJQueryPayment=true&amp;useBaselineLabel=true&amp;css=travelerCheckoutHapi.css&amp;jsVersion=9" data-at-id="panIframe" data-type="pan"></iframe>
-                                                                                    <span class="cc-available-container"><span class="cc-card-types"><i class="icon-cc-visa cc-card-type is-active"></i><i class="icon-cc-amex cc-card-type is-active"></i><i class="icon-cc-mastercard cc-card-type is-active"></i></span></span>
-                                                                                </div>
-                                                                            </tracked-element>
-                                                                            <span class="icon-stack form-control-icon">
-                        <i class="bg-success-tint-85 icon-square icon-stack-2x"></i>
-                        <i class="icon-lock icon-stack-1x icon-success"></i>
-                    </span>
-                                                                        </floating-label-hapi>
-                                                                    </div>
+																																			<span class="icon-stack form-control-icon">
+																																				<!-- <i class="bg-success-tint-85 icon-square icon-stack-2x"></i> -->
+																																				<i class="icon-lock icon-stack-2x icon-success"></i>
+																																			</span>
+																																			<tracked-element>
+																																				<input placeholder="Card Number" type="text" pattern="\d*" id="cc-date" class="js-expirationDate expirationDate form-control" value="" maxlength="16" autocomplete="off" data-at-id="expiry-date-standard" data-tracking-label="expiry-date-standard">
+																																			</tracked-element>
+																																		</div>
                                                                 </div>
                                                             </div>
                                                             <div class="js-expirationDateContainer">
-                                                                <div class="col-xs-12 col-md-6">
+                                                                <div class="col-xs-6 col-md-6">
                                                                     <div class="cc-date">
                                                                         <div class="form-group">
-                                                                            <div class="visible-md visible-lg autofill-override">
-                                                                                <floating-label-input class="floating-label">
-                                                                                    <label class="control-label">Expiration Date</label>
-                                                                                    <input type="text" tabindex="-1" name="expiration" class="autofill-override-input" aria-hidden="true">
-                                                                                    <label class="autofill-override-label" aria-hidden="true">cc-date</label>
-                                                                                    <tracked-element><input type="text" pattern="\d*" id="cc-date" class="js-expirationDate expirationDate form-control" value="" maxlength="7" autocomplete="off" data-at-id="expiry-date-standard" data-tracking-label="expiry-date-standard"></tracked-element>
-                                                                                </floating-label-input>
-                                                                            </div>
-                                                                            <div class="visible-xs-block visible-sm-block form-group table mobile-expirationDate-container">
+                                                                            <div class="visible-md visible-lg visible-xs-block visible-sm-block form-group table mobile-expirationDate-container">
                                                                                 <div class="table-cell form-group">
                                                                                     <floating-label-select class="floating-label floating-label-select">
-                                                                                        <label for="expiry-month" class="control-label expiration-label">Exp. Month</label>
                                                                                         <tracked-element><select id="expiry-month" class="form-control exp-month-dropdown month mobile-expirationDate js-expirationMonth" name="expiry-month" data-tracking-label="expiry-month-mobile" data-at-id="expiry-month-mobile">
                                                                                             <option value="" class="exp-default" hidden=""></option>
+																																														<option value="" disabled selected hidden> Exp. Month </option>
                                                                                             <option value="01">01 - Ene.</option><option value="02">02 - Feb.</option>
                                                                                             <option value="03">03 - Mar.</option><option value="04">04 - Abr.</option>
                                                                                             <option value="05">05 - May.</option><option value="06">06 - Jun.</option>
@@ -8219,11 +8206,11 @@
                                                                             <div class="table-cell vertical-middle exp-slash">/</div>
                                                                             <div class="table-cell vertical-align-bottom form-group">
                                                                                 <floating-label-select class="floating-label floating-label-select">
-                                                                                    <label for="expiry-year" class="control-label expiration-label">Exp. Year</label>
                                                                                     <tracked-element>
                                                                                         <select id="expiry-year" class="form-control year exp-year-dropdown mobile-expirationDate js-expirationYear" name="expiry-year" data-tracking-label="expiry-year-mobile" data-at-id="expiry-year-mobile">
                                                                                             <option value="" class="exp-default" hidden=""></option>
-                                                                                            <option value="2018">2018</option><option value="2019">2019</option>
+																																														<option value="" disabled selected hidden> Exp. Year</option>
+																																														<option value="2018">2018</option><option value="2019">2019</option>
                                                                                             <option value="2020">2020</option><option value="2021">2021</option>
                                                                                             <option value="2022">2022</option><option value="2023">2023</option>
                                                                                             <option value="2024">2024</option><option value="2025">2025</option>
@@ -8243,18 +8230,15 @@
                                                             </div>
                                                         </div>
                                                             
-                                                            <div class="col-xs-12 col-md-6">
+                                                            <div class="col-xs-6 col-md-6">
                                                                 <div class="js-expirationDateContainer">
-                                                                <div class="col-xs-12 col-md-6">
+                                                                <div class="col-xs-6 col-md-6">
                                                                     <div class="cc-date">
                                                                         <div class="form-group">
-                                                                            <div class="visible-md visible-lg autofill-override">
-                                                                                <floating-label-input class="floating-label">
-                                                                                    <label class="control-label">Security Number</label>
-                                                                                    <input type="text" tabindex="-1" name="expiration" class="autofill-override-input" aria-hidden="true">
-                                                                                    <label class="autofill-override-label" aria-hidden="true">cc-date</label>
-                                                                                    <tracked-element><input type="text" pattern="\d*" id="cc-date" class="js-expirationDate expirationDate form-control" value="" maxlength="7" autocomplete="off" data-at-id="expiry-date-standard" data-tracking-label="expiry-date-standard"></tracked-element>
-                                                                                </floating-label-input>
+                                                                            <div class="visible-xs-block visible-sm-block visible-md visible-lg autofill-override">
+																																										<tracked-element>
+																																											<input placeholder="Security Number" type="text" pattern="\d*" id="cc-date" class="js-expirationDate expirationDate form-control" value="" maxlength="7" autocomplete="off" data-at-id="expiry-date-standard" data-tracking-label="expiry-date-standard">
+																																										</tracked-element>
                                                                             </div>
                                                                 
                                                                             </div>
