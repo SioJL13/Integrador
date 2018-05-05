@@ -1,0 +1,1 @@
+HomeAway.Tracker.addEvent( 'VIEW_CART' );

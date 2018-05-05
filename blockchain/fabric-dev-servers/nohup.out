@@ -1,0 +1,722 @@
+Discovering types from business network definition ...
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+Web server listening at: http://localhost:3000
+Browse your REST API at http://localhost:3000/explorer
+Discovering types from business network definition ...
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+Web server listening at: http://localhost:3000
+Browse your REST API at http://localhost:3000/explorer
+Discovering types from business network definition ...
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+events.js:137
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:1003:13)
+    at _exceptionWithHostPort (util.js:1024:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1496:7)
+    at module.exports.promise.then.then (/usr/local/lib/node_modules/composer-rest-server/cli.js:131:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:4474) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:4474) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:4474) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:4474) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 1)
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:4474) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:4474) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+(node:4474) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 3)
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:4474) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:4474) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 5)
+(node:4474) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 5)
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'admin@fastfood.com' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'admin@limpio.com' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'admin@gokarts.com' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'admin@limpio.com' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'admin@fastfood.com' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'admin@gokarts.com' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+Discovering types from business network definition ...
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+Web server listening at: http://localhost:3000
+Browse your REST API at http://localhost:3000/explorer
+Discovering types from business network definition ...
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+events.js:137
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:1003:13)
+    at _exceptionWithHostPort (util.js:1024:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1496:7)
+    at module.exports.promise.then.then (/usr/local/lib/node_modules/composer-rest-server/cli.js:131:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:1231) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:1231) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:1231) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:1231) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 1)
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:1231) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:1231) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+(node:1231) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 3)
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:1231) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:1231) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 5)
+(node:1231) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 5)
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:1231) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:1231) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 7)
+(node:1231) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 7)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'Limpio#2018-04-26T22:27:38.957Z' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+(node:1231) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:1231) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 9)
+(node:1231) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 9)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:1231) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:1231) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 11)
+(node:1231) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 11)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:1231) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:1231) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 13)
+(node:1231) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 13)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:1231) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:1231) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 15)
+(node:1231) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 15)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'Go Karts#2018-04-26T22:54:52.161Z' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+(node:1231) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:1231) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 17)
+(node:1231) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 17)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+Discovering types from business network definition ...
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+Web server listening at: http://localhost:3000
+Browse your REST API at http://localhost:3000/explorer
+Discovering types from business network definition ...
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+events.js:137
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:1003:13)
+    at _exceptionWithHostPort (util.js:1024:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1496:7)
+    at module.exports.promise.then.then (/usr/local/lib/node_modules/composer-rest-server/cli.js:131:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+Discovering types from business network definition ...
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+Web server listening at: http://localhost:3000
+Browse your REST API at http://localhost:3000/explorer
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'Limpio#2018-05-02T01:53:49.585Z' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'Limpio#2018-05-02T01:53:49.585Z' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: Peer has rejected transaction '590b6ce716166706b709d8520737dc4ee8eb6b543a80bd81568b771c8c203be2' with code MVCC_READ_CONFLICT
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: Peer has rejected transaction 'b11147f68302e1238704c46ce07b7f56a270fc2f3f55db9fd60fa798c6572615' with code MVCC_READ_CONFLICT
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'Fast Food#2018-05-02T01:55:00.282Z' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'Fast Food#2018-05-02T01:55:00.282Z' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'Fast Food#2018-05-02T05:23:02.237Z' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'Fast Food#2018-05-02T05:23:02.237Z' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+Unhandled error for request GET /api/com.homeawa.AddEvent?_=1525378294438: Error: Error trying to query business network. Error: Connect Failed
+    at channel.queryByChaincode.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:809:34)
+    at <anonymous>
+Unhandled error for request GET /api/com.homeawa.AddEvent?_=1525378307103: Error: Error trying to query business network. Error: Connect Failed
+    at channel.queryByChaincode.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:809:34)
+    at <anonymous>
+Unhandled error for request GET /api/com.homeawa.AddEvent: Error: Error trying to query business network. Error: Connect Failed
+    at channel.queryByChaincode.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:809:34)
+    at <anonymous>
+Discovering types from business network definition ...
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+events.js:137
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:1003:13)
+    at _exceptionWithHostPort (util.js:1024:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1496:7)
+    at module.exports.promise.then.then (/usr/local/lib/node_modules/composer-rest-server/cli.js:131:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:3333) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:3333) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:3333) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+(node:3333) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 1)
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:3333) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 2)
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:3333) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 5)
+(node:3333) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 5)
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:3333) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 7)
+(node:3333) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 7)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:3333) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 9)
+(node:3333) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 9)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:3333) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 11)
+(node:3333) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 11)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:3333) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 13)
+(node:3333) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 13)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:3333) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 15)
+(node:3333) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 15)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:3333) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 17)
+(node:3333) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 17)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'Fast Food#2018-05-03T20:17:50.455Z' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'Fast Food#2018-05-03T20:17:50.455Z' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 19)
+(node:3333) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 19)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:3333) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 21)
+(node:3333) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 21)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'Go Karts#2018-05-03T20:18:09.600Z' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'Go Karts#2018-05-03T20:18:09.600Z' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+Discovering types from business network definition ...
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+events.js:137
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:1003:13)
+    at _exceptionWithHostPort (util.js:1024:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1496:7)
+    at module.exports.promise.then.then (/usr/local/lib/node_modules/composer-rest-server/cli.js:131:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:3333) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 23)
+(node:3333) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 23)
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:3333) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 25)
+(node:3333) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 25)
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:3333) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 27)
+(node:3333) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 27)
+Unhandled error for request POST /api/com.homeawa.AddPartner: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:3333) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 29)
+(node:3333) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 29)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'Limpio#2018-05-03T21:33:03.057Z' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Error: The event hub has not been connected to the event source
+    at EventHub._checkConnection (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:479:11)
+    at EventHub.registerTxEvent (/usr/local/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/EventHub.js:713:8)
+    at Promise (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:59:20)
+    at new Promise (<anonymous>)
+    at eventHubs.forEach (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:53:29)
+    at Array.forEach (<anonymous>)
+    at HLFTxEventHandler.startListening (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlftxeventhandler.js:51:24)
+    at _initializeChannel.then.then (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:895:30)
+    at <anonymous>
+(node:3333) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 31)
+(node:3333) PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 31)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: The event hub has not been connected to the event source
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+Unhandled error for request POST /api/com.homeawa.AddEvent: Error: Error trying invoke business network. Error: No valid responses from any peers.
+Response from attempted peer comms was an error: Error: chaincode error (status: 500, message: Error: Failed to add object with ID 'Limpio#2018-05-03T21:35:02.051Z' as the object already exists)
+
+    at _initializeChannel.then.then.then.then.catch (/usr/local/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:916:34)
+    at <anonymous>
+Discovering types from business network definition ...
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+events.js:137
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:1003:13)
+    at _exceptionWithHostPort (util.js:1024:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1496:7)
+    at module.exports.promise.then.then (/usr/local/lib/node_modules/composer-rest-server/cli.js:131:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)

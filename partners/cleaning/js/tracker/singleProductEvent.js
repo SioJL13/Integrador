@@ -1,0 +1,1 @@
+HomeAway.Tracker.addEvent( 'SINGLE_PRODUCT' );

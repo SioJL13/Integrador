@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang=en-US>
+
+<head>
+    <title>Renty - Choose Car</title>
+    <link rel="shortcut icon" type=image/x-icon href=images/favicon.ico />
+    <meta http-equiv=content-type content="text/html; charset=UTF-8" />
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel=stylesheet href=css/jquery-ui.css type=text/css media=all />
+    <link rel=stylesheet href="../style.css" type=text/css media=all />
+    <link rel=stylesheet href=css/jquery.slider.min.css />
+    <!--[if IE]> <script type=text/javascript src=js/html5.js></script> <link rel=stylesheet id=stylesheet-ie href=css/css_ie.css type=text/css media=all /> <![endif]-->
+</head>
+
+<body class="page page-two-column">
+    <div id="conteiner">
+        <div id="branding">
+            <div id="branding-content">
+                <div class=title-content>
+                    <a href="../home/index.html" title> <img class=site-logo src="../images/thumb.png" alt />
+                        <h1 class=site-title> Renty </h1> </a>
+                </div>
+                <div class=member> <span class=sign_in><a class="sign_button tab_link_button" href=#sign_in title>Sign in</a></span> <span class=register><a class="sign_button tab_link_button" href=#register title>Register</a></span> </div>
+            </div>
+            <div class=clear></div>
+        </div>
+        <div id="progress-bar">
+            <div id="progress-bar-steps">
+                <div class="progress-bar-step done">
+                    <div class=step_number>1</div>
+                    <div class=step_name>Create request</div>
+                    <div class=clear></div>
+                </div>
+                <div class="progress-bar-step current">
+                    <div class=step_number>2</div>
+                    <div class=step_name>Choose a car</div>
+                    <div class=clear></div>
+                </div>
+                <div class=progress-bar-step>
+                    <div class=step_number>3</div>
+                    <div class=step_name>Choose extras</div>
+                    <div class=clear></div>
+                </div>
+                <div class=progress-bar-step>
+                    <div class=step_number>4</div>
+                    <div class=step_name>Review &amp; Book</div>
+                    <div class=clear></div>
+                </div>
+            </div>
+            <div class=clear></div>
+        </div>
+        <div id=main>
+            <div class=primary>
+                <aside id=secondary class=sidebar-left>
+                    <div class="widget info_widget">
+                        <h3 class=widget-title> <img src="../images/info.png" alt /> Info </h3>
+                        <div class=widget-content><strong>Please Note: </strong> The vehicles shown are examples. Specific models within a car class may vary in availability and features, such as passenger seating, luggage capacity and mileage.</div>
+                    </div>
+                    <div class="widget filter_widget">
+                        <h3 class=widget-title> <img src="../images/filter_results.png" alt /> Filter results </h3>
+                        <h4>Price range</h4>
+                        <div class=widget-content-range>
+                            <input class=price_range value=250;1000 name=price_range /> </div>
+                        <h4>Manufacturers</h4>
+                        <div class="widget-content widget-filter">
+                            <div class=filter>
+                                <input id=manufacturers_ford type=checkbox class=styled name=manufacturers_ford value="1" />
+                                <label for=manufacturers_ford>Ford</label>
+                                <div class=filter_quantity>1</div>
+                            </div>
+                            <div class=filter>
+                                <input id=manufacturers_reno type=checkbox class=styled name=manufacturers_reno value="1" />
+                                <label for=manufacturers_reno>Reno</label>
+                                <div class=filter_quantity>3</div>
+                            </div>
+                            <div class=filter>
+                                <input id=manufacturers_toyota type=checkbox class=styled name=manufacturers_toyota value="1" />
+                                <label for=manufacturers_toyota>Toyota</label>
+                                <div class=filter_quantity>1</div>
+                            </div>
+                            <div class=filter>
+                                <input id=manufacturers_chevrolet type=checkbox class=styled name=manufacturers_chevrolet value="1" />
+                                <label for=manufacturers_chevrolet>Chevrolet</label>
+                                <div class=filter_quantity>1</div>
+                            </div>
+                            <div class=filter>
+                                <input id=manufacturers_bmw type=checkbox class=styled name=manufacturers_bmw value="1" />
+                                <label for=manufacturers_bmw>BMW</label>
+                                <div class=filter_quantity>17</div>
+                            </div>
+                        </div>
+                        <h4>Number of passangers</h4>
+                        <div class=widget-content-range>
+                            <input class=passangers_range value=1;5 name=passangers_range /> </div>
+                        <h4>Vehicle type</h4>
+                        <div class="widget-content widget-filter">
+                            <div class=filter>
+                                <input id=type_economy type=checkbox class=styled name=type_economy value="1" />
+                                <label for=type_economy>Economy</label>
+                                <div class=filter_quantity>1</div>
+                            </div>
+                            <div class=filter>
+                                <input id=type_compact type=checkbox class=styled name=type_compact value="1" />
+                                <label for=type_compact>Compact</label>
+                                <div class=filter_quantity>1</div>
+                            </div>
+                            <div class=filter>
+                                <input id=type_intermediate type=checkbox class=styled name=type_intermediate value="1" />
+                                <label for=type_intermediate>Intermediate</label>
+                                <div class=filter_quantity>1</div>
+                            </div>
+                            <div class=filter>
+                                <input id=type_sport type=checkbox class=styled name=type_sport value="1" />
+                                <label for=type_sport>Sport</label>
+                                <div class=filter_quantity>2</div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <div id=content class=sidebar-middle>
+                    <div class="widget main-widget product-widget">
+                        <div class=content-overlay> <img class=ajax-loader src=images/ajax-loader.gif alt /> </div>
+                        <form action="../extras/index.html">
+                            <div class=widget-title>
+                                <div> <img src="../images/list.png" alt /> Results <span>(10 from 24)</span> </div>
+                                <div class=widget-title-sort><span class=viev-all>Sort by: </span> <a href=# title class=current>Price</a> | <a href=# title>Type</a></div>
+                                <div class=clear></div>
+                            </div>
+                            <div class=post>
+                                <div class=main-block_container>
+                                    <div class=main-block>
+                                        <div class=product-img> <img src="../images/product-3.png"/> </div>
+                                        <div class=product-info>
+                                            <h3 class=entry-format>Ford Escape <span>| Economy</span> <span class=top-seller>Top Seller</span></h3>
+                                            <div class=features>
+                                                
+                                                <p><img src="../images/passenger-icon.png" alt /> 5 passengers</p>
+                                                <p><img src="../images/suitcase-icon.png" alt /> 3 large suitcases, 2 small suitcase</p>
+                                                <p><img src="../images/transmission-icon.png" alt /> automatic transmission</p>
+                                                <p><img src="../images/air-icon.png" alt /> air conditioning</p>
+                                                <p><img src="../images/km_l-icon.png" alt /> 9 km/l</p>
+                                            </div>
+                                            <div class=details>
+                                                <div class=view-details>[+] View car details</div>
+                                                <div class=close-details>[-] Close car details</div>
+                                                <ul class=details-more>
+                                                    <li>6-speaker radio/CD system</li>
+                                                    <li>Escaro black fabric</li>
+                                                    <li>Hybrid System display</li>
+                                                    <li>Vehicle Stability Control</li>
+                                                    <li>Hill-start Assist Control</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=additional-block>
+                                        <div>
+                                            <p>$299.00</p>
+                                            <p class=span>Unlimited free miles included</p>
+                                            <input class="continue_button blue_button" type=submit value=Select /> </div>
+                                    </div>
+                                    <div class=clear></div>
+                                </div>
+                            </div>
+                            <div class=post-delimiter></div>
+                            <div class=post>
+                                <div class=main-block_container>
+                                    <div class=main-block>
+                                        <div class=product-img> <img src="../images/product-2.png" /> </div>
+                                        <div class=product-info>
+                                            <h3 class=entry-format>Chevy Aveo <span>| Compact</span></h3>
+                                            <div class=features>
+                                                <p><img src="../images/passenger-icon.png" alt /> 5 passengers</p>
+                                                <p><img src="../images/suitcase-icon.png" alt /> 1 large suitcases, 1 small suitcase</p>
+                                                <p><img src="../images/transmission-icon.png" alt /> automatic transmission</p>
+                                                <p><img src="../images/air-icon.png" alt /> air conditioning</p>
+                                                <p><img src="../images/km_l-icon.png" alt /> 13 km/l</p>
+                                            </div>
+                                            <div class=details>
+                                                <div class=view-details>[+] View car details</div>
+                                                <div class=close-details>[-] Close car details</div>
+                                                <ul class=details-more>
+                                                    <li>6-speaker radio/CD system</li>
+                                                    <li>Escaro black fabric</li>
+                                                    <li>Hybrid System display</li>
+                                                    <li>Vehicle Stability Control</li>
+                                                    <li>Hill-start Assist Control</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=additional-block>
+                                        <div>
+                                            <p>$360.99</p>
+                                            <p class=span>Unlimited free miles included</p>
+                                            <input class="continue_button blue_button" type=submit value=Select /> </div>
+                                    </div>
+                                    <div class=clear></div>
+                                </div>
+                            </div>
+                            <div class=post-delimiter></div>
+                            <div class=post>
+                                <div class=main-block_container>
+                                    <div class=main-block>
+                                        <div class=product-img> <img src="../images/product-1.png" /> </div>
+                                        <div class=product-info>
+                                            <h3 class=entry-format>Toyota Corolla <span>| Intermediate</span></h3>
+                                            <div class=features>
+                                                <p><img src="../images/passenger-icon.png" alt /> 5 passengers</p>
+                                                <p><img src="../images/suitcase-icon.png" alt /> 2 large suitcases, 1 small suitcase</p>
+                                                <p><img src="../images/transmission-icon.png" alt /> automatic transmission</p>
+                                                <p><img src="../images/air-icon.png" alt /> air conditioning</p>
+                                                <p><img src="../images/km_l-icon.png" alt /> 14 km/l</p>
+                                            </div>
+                                            <div class=details>
+                                                <div class=view-details>[+] View car details</div>
+                                                <div class=close-details>[-] Close car details</div>
+                                                <ul class=details-more>
+                                                    <li>6-speaker radio/CD system</li>
+                                                    <li>Escaro black fabric</li>
+                                                    <li>Hybrid System display</li>
+                                                    <li>Vehicle Stability Control</li>
+                                                    <li>Hill-start Assist Control</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=additional-block>
+                                        <div>
+                                            <p>$845.25</p>
+                                            <p class=span>Unlimited free miles included</p>
+                                            <input class="continue_button blue_button" type=submit value=Select /> </div>
+                                    </div>
+                                    <div class=clear></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class=pagination-block>
+                        <div class=pagination>
+                            <div class=left></div>
+                            <div class=current>1</div>
+                            <div>2</div>
+                            <div>3</div>
+                            <div>...</div>
+                            <div>10</div>
+                            <div class=right></div>
+                            <p class=clear></p>
+                        </div>
+                    </div>
+                </div>
+                <div class=clear></div>
+            </div>
+        </div>
+        <div class=clear></div>
+        <footer id=footer>
+            <div id=footer-menu>
+                <div class=footer-content>
+                    <div class=footer-navbar>
+                        <div class=footer-nav>
+                            <h3 class=widget-title>Renty</h3>
+                            <ul>
+                                <li><a href=01-home-v1.html title>Home</a></li>
+                                <li><a href=# title>Privacy</a></li>
+                                <li><a href=# title>Services</a></li>
+                                <li><a href=# title>Partners</a></li>
+                                <li><a href=# title>News</a></li>
+                            </ul>
+                        </div>
+                        <div class=footer-nav>
+                            <h3 class=widget-title>About</h3>
+                            <ul>
+                                <li><a href=# title>Latest News</a></li>
+                                <li><a href=# title>Press Releases</a></li>
+                                <li><a href=# title>Careers</a></li>
+                                <li><a href=# title>Terms of Use</a></li>
+                            </ul>
+                        </div>
+                        <div class=footer-nav>
+                            <h3 class=widget-title>Support</h3>
+                            <ul>
+                                <li><a href=# title>Contact Us</a></li>
+                                <li><a href=# title>Find Your Invoice</a></li>
+                                <li><a href=10-faq.html title>FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=widget-area>
+                        <div class="recent_tweets footer-widget-single">
+                            <h3>Recent tweets</h3>
+                            <div class=recent_tweets_content><a href=# title>@bestwebsoft</a> velit, vitae tincidunt orci. Proin vitae auctor lectus.</div>
+                            <div class=recent_tweets_url><a href=# title>https://bestwebsoft.com</a></div>
+                            <div class=recent_tweets_time>posted 2 days ago</div>
+                        </div>
+                    </div>
+                    <div class="custom-info footer-widget-single">
+                        <div class=support> <img src=images/support-icon.png alt />
+                            <div>
+                                <div class=title>Online support</div>
+                                <div class=phone>+1 (555) 555 - 28 - 28</div>
+                                <div class=email><a href=# title>support@bestwebsoft.zendesk.com</a></div>
+                            </div>
+                            <div class=clear></div>
+                        </div>
+                        <div class=social-plugins>
+                            <div class=fcbk_like>
+                                <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.bestwebsoft.com&amp;locale=en_US&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" style=border-width:0;border:0;overflow:hidden;width:110px;height:21px;background-color:transparent></iframe>
+                            </div>
+                            <div class=twitter_like> <a href=https://twitter.com/share class=twitter-share-button>Tweet</a>
+                                <script type=text/javascript>
+                                    ! function(f, a, g) {
+                                        var e, b = f.getElementsByTagName(a)[0],
+                                            c = /^http:/.test(f.location) ? "http" : "https";
+                                        if (!f.getElementById(g)) {
+                                            e = f.createElement(a);
+                                            e.id = g;
+                                            e.src = c + "://platform.twitter.com/widgets.js";
+                                            b.parentNode.insertBefore(e, b)
+                                        }
+                                    }(document, "script", "twitter-wjs");
+                                </script>
+                            </div>
+                            <div class=google_plus_one>
+                                <div class=g-plusone data-size=medium></div>
+                                <script type=text/javascript>
+                                    (function() {
+                                        var a = document.createElement("script");
+                                        a.type = "text/javascript";
+                                        a.async = true;
+                                        a.src = "https://apis.google.com/js/plusone.js";
+                                        var b = document.getElementsByTagName("script")[0];
+                                        b.parentNode.insertBefore(a, b)
+                                    })();
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=clear></div>
+                </div>
+            </div>
+            <div id=footer-content> <img class=site-logo src=images/thumb.png alt />
+                <h1 class=site-title>Renty</h1>
+                <div class=company-name>Renty Company Inc,120 CA 15th Avenue - Suite 214</div>
+            </div>
+        </footer>
+    </div>
+    <div id=overlay_block></div>
+    <div class="admin-form-content sign_register_block">
+        <div class=admin-form-block>
+            <form class="main-form admin-form" action=#>
+                <div class=main_form_navigation>
+                    <div id=tab_register class="title-form back"><span class=register><a href=#register title>Register</a></span></div>
+                    <div id=tab_sign_in class="title-form current"><span class=sign_in><a href=#sign_in title>Sign In</a></span></div>
+                </div>
+                <div id=tab_sign_in_content class=content-form>
+                    <div>
+                        <input id=sign_in_email class=input_placeholder type=email value placeholder="Email address" name="sign_in_email" /> </div>
+                    <div>
+                        <input id=sign_in_pass type=password value name="sign_in_pass" /> </div>
+                    <div>
+                        <input id=remember_me_checkbox type=checkbox class=styled name=remember_me value="1" />
+                        <label for=remember_me_checkbox> Remember me next time</label>
+                    </div>
+                    <input class="admin-form-submit orange_button" type=submit value="Continue" />
+                    <div class=admin_form_link> <span class=forgot_passwd><a class=tab_link_button href=#forgot_passwd title>Forgot password?</a></span> </div>
+                </div>
+                <div id=tab_register_content class="content-form hidden">
+                    <div>
+                        <input id=register_email class=input_placeholder type=email value placeholder="Email address" name="register_email" /> </div>
+                    <div>
+                        <input id=register_name type=text value name="register_name" /> </div>
+                    <div>
+                        <input id=register_remember_me_checkbox type=checkbox class=styled name=remember_me value="1" />
+                        <label for=register_remember_me_checkbox> Remember me next time</label>
+                    </div>
+                    <input class="admin-form-submit orange_button" type=submit value="Continue" />
+                    <div class=admin_form_link> <span class=sign_in><a class=tab_link_button href=#sign_in title>Already registered?</a></span> </div>
+                </div>
+                <div class=clear></div>
+            </form>
+            <div class=admin-form-separator>
+                <div class=separator>Or</div>
+            </div>
+            <input class=connect_fb type=button value="Connect With Facebook" />
+            <input class=connect_twitter type=button value="Connect With Twitter" /> </div>
+    </div>
+    <div class="admin-form-content forgot_passwd_block">
+        <div class=admin-form-block>
+            <form class="main-form admin-form" action=#>
+                <div class=main_form_navigation>
+                    <div id=tab_forgot_passwd class="title-form current">Forgot Password?</div>
+                </div>
+                <div id=tab_forgot_passwd_content class=content-form>
+                    <input id=forgot_pass_email class=input_placeholder type=email value placeholder="Email address" name="forgot_pass_email" />
+                    <div id=forgot_pass_text> We will send you the password in few minutes.</div>
+                    <input class="admin-form-submit orange_button" type=submit value="Continue" />
+                    <div class=admin_form_link> <span class=sign_in><a class=tab_link_button href=#sign_in title>Sign In</a></span> </div>
+                </div>
+                <div class=clear></div>
+            </form>
+        </div>
+    </div>
+    <script type=text/javascript src=js/jquery-1.11.3.min.js></script>
+    <script type=text/javascript src=js/jquery-migrate-1.2.1.min.js></script>
+    <script type=text/javascript src=js/jquery-ui.js></script>
+    <!--[if IE]> <script type=text/javascript src=js/placeholder_ie.js></script> <![endif]-->
+    <script type=text/javascript src=js/jquery.slider.min.js></script>
+    <script type=text/javascript src=js/jquery.meio.mask.js></script>
+    <script type=text/javascript src=js/custom-form-elements.js></script>
+    <script type=text/javascript src=js/jquery.selectbox-0.2.min.js></script>
+    <script type=text/javascript src=js/script.js></script>
+
+    <script type="text/javascript" src="/tracker.js?partner=admin@gokarts.com"></script>
+    <script type="text/javascript" src="../tracker/viewProductsEvent.js"></script>
+</body>
+
+</html>
